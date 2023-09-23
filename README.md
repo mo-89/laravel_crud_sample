@@ -6,7 +6,13 @@ GET以外はCSRF対策により、419 Page requiredになる
 
 ### Edit app/Http/Middleware/VerifyCsrfToken.php
 protected $except にリクエストしたいAPIのrouteを追加
-'*'でも可
+
+'*'の指定でも可
+```
+    protected $except = [
+        '*',
+    ];
+```
 
 [Laravel docs csrf-excluding-uris](https://laravel.com/docs/8.x/csrf#csrf-excluding-uris)
 
