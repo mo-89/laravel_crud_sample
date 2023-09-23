@@ -17,8 +17,8 @@ GET http://localhost/api/testers
 
 #### store
 POST http://localhost/api/testers
-body raw JSON
 ```
+# body raw JSON
 {
   "name": "John Doe",
   "memo": "Sample Memo"
