@@ -4,7 +4,7 @@
 
 GET以外はCSRF対策により、419 Page requiredになる
 
-### app/Http/Middleware/VerifyCsrfToken.php
+### Edit app/Http/Middleware/VerifyCsrfToken.php
 protected $except にリクエストしたいAPIのrouteを追加
 '*'でも可
 
